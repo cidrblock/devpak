@@ -10,17 +10,6 @@ from ansible.errors import AnsibleModuleError
 from collections.abc import MutableMapping
 
 
-ARGSPEC = {
-    'argument_spec': {
-        'updates': {
-            'required': True,
-            'type': 'list'
-        },
-    }
-}
-
-VALID_MODULE_KWARGS = ('argument_spec', 'mutually_exclusive', 'required_if',
-                       'required_one_of', 'required_together')
 
 
 class ActionModule(ActionBase):
